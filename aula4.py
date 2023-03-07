@@ -15,6 +15,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle('QLabel')
         self.lbl = QLabel()
         self.lbl.setPixmap(QPixmap('img.png'))
+        self.lbl.setScaledContents(True)
 
         layout = QVBoxLayout()
         layout.addWidget(self.lbl)
